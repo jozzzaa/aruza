@@ -67,7 +67,7 @@ function webpack() {
 
 function serve() {
   PLUGINS.server.init({
-    port: PORT,
+    port: process.env.PORT,
     server: './',
     open: false
   });
