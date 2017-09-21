@@ -2,13 +2,15 @@
 
 // 1. Base stuff
 @import 'base/variables';
-@import 'base/reset';
+@import 'base/mixins';
+@import 'base/normalize';
 @import 'base/typography';
 @import 'base/base';
 
 // 2. Layout-related sections
+@import 'layout/main';
 
 // 3. Components
-@import 'components/hero_unit';
 
 // 4. Page-specific styles
+@import 'pages/home';
