@@ -23,7 +23,7 @@
                 <!-- <li class="list_item">Website Development</li>
                 <li class="list_item">Social Media Management</li>
                 <li class="list_item">App Development</li> -->
-                <li class="list_item nav_cta">Get Started</li>
+                <li class="list_item nav_cta" id="get_started_cta">Get Started</li>
               </ul>
             </div>
           </div>
@@ -37,7 +37,7 @@
                 <img src="images/icons/customizable_icon.svg">
                 <p>Completely Customizable</p>
               </div>
-              <div class="benefit_col">
+              <div class="benefit_col" id="benefit_wrap">
                 <img src="images/icons/content_icon.svg" alt="">
                 <p>We Author all<br> Content for You</p>
               </div>
@@ -119,7 +119,7 @@
             <div class="grid_row">
               <div class="grid_col_3">
                 <img src="images/icons/content_icon.svg" alt="">
-                <p>We Completely Author <br>all Content for you</p>
+                <p>We Completely Author all Content</p>
               </div>
               <div class="grid_col_3 middle_col">
                 <img src="images/icons/single_page.svg" alt="">
@@ -133,7 +133,7 @@
             <div class="grid_row middle_row">
               <div class="grid_col_3">
                 <img src="images/icons/payments_icon.svg" alt="">
-                <p>Payment Integration <br>(Stripe / Paypal)</p>
+                <p>Payment <br>Integration</p>
               </div>
               <div class="grid_col_3 middle_col">
                 <img src="images/icons/2_weeks.svg" alt="">
@@ -195,9 +195,14 @@
 
       // autoscroll
       $("#hero_cta").click(function() {
-        console.log('hey')
         $('html, body').animate({
           scrollTop: $(".photography").offset().top
+        }, 1000, "swing");
+      });
+
+      $("#get_started_cta").click(function() {
+        $('html, body').animate({
+          scrollTop: $(".contact_box").offset().top
         }, 1000, "swing");
       });
 
