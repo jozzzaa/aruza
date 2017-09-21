@@ -50,7 +50,7 @@ nav {
         border-bottom: 0px;
         background-color: #fff;
         border: 1px solid rgba(#fff, 0);
-        color: #834BFB;
+        color: darken(#1EDDB4, 10);
       }
     }
   }
@@ -67,7 +67,7 @@ nav {
 }
 
 .hero_container {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   padding: 1.5%;
 
@@ -76,12 +76,13 @@ nav {
     position: relative;
     background-color: $color-blue-primary;
     background-color: #2499f3;
-    background-image: linear-gradient(19deg, #2499f3 0%, #B721FF 140%);
-    background-color: #FFE53B;
-// background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
-// background-color: #74EBD5;
-// background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
-
+    // background-image: linear-gradient(19deg, #2499f3 0%, #B721FF 140%);
+    // background-color: #FFE53B;
+    // background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    // background-color: #74EBD5;
+    // background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    background-color: #08AEEA;
+    background-image: $gradient;
 
 
     #particles-js {
@@ -112,8 +113,13 @@ nav {
         padding-bottom: 0.15em;
       }
 
+      #line_holder {
+        opacity: 0;
+      }
+
       .quick_benefits {
-        width: 80%;
+        width: 100%;
+        max-width: 600px;
         display: flex;
         padding-top: 2em;
         margin: 0 auto;
@@ -155,6 +161,8 @@ nav {
   padding: 5em 0em 5em 0em;
   display: flex;
   overflow: hidden !important;
+  position: relative;
+  z-index: 2;
 
   #blue_left {
     position: relative;
@@ -162,7 +170,7 @@ nav {
     &::before {
       height: 60%;
       width: 5px;
-      border-left: 1px solid rgba($color-blue-primary, 0.8);
+      border-left: 2px solid rgba($color-green-primary, 0.8);
       display: block;
       content: '';
       position: absolute;
@@ -177,7 +185,7 @@ nav {
     &::before {
       height: 60%;
       width: 5px;
-      border-left: 1px solid rgba($color-blue-primary, 0.8);
+      border-left: 2px solid rgba($color-green-primary, 0.8);
       display: block;
       content: '';
       position: absolute;
@@ -226,10 +234,15 @@ nav {
 
   }
 
+  #offset_container {
+    text-align: right;
+  }
+
   .benefit_text_offset {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+    display: inline-block;
+    position: relative;
+    // top: 0px;
+    // right: 0px;
     width: 60%;
     margin-top: 20%;
     text-align: right;
@@ -256,6 +269,75 @@ nav {
       position: absolute;
       bottom: -50px;
       right: -50px;
+    }
+  }
+
+  .benefit_quote {
+    width: 60%;
+    padding-top: 4.5em;
+    display: flex;
+
+    .quote_left {
+      width: 20%;
+
+      img {
+        min-height: 60px;
+        min-width: 60px;
+        border-radius: 100%;
+      }
+    }
+
+    .quote_right {
+      width: 80%;
+
+      p {
+        font-style: italic;
+        font-size: 0.9em;
+      }
+
+      #quote_person {
+        font-style: normal !important;
+        font-size: 0.8;
+        font-weight: 400;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .benefit_quote_offset {
+    width: 60%;
+    padding-top: 4.5em;
+    display: inline-block;
+
+    .quote_container {
+      width: 100%;
+      display: flex;
+    }
+
+    .quote_right {
+      width: 20%;
+
+      img {
+        min-height: 60px;
+        min-width: 60px;
+        border-radius: 100%;
+      }
+    }
+
+    .quote_left {
+      width: 80%;
+
+      p {
+        font-style: italic;
+        font-size: 0.9em;
+      }
+
+      #quote_person {
+        font-style: normal !important;
+        font-size: 0.8;
+        font-weight: 400;
+        padding-top: 10px;
+      }
     }
   }
 }
@@ -296,6 +378,17 @@ nav {
 .customizable {
   background-color: $color-background;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  .triange_pattern {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.7;
+  }
 
   #benefit_two {
     width: 100%;
@@ -340,6 +433,7 @@ nav {
 
     img {
       width: 25px;
+      // height: 25px;
       padding-top: 1.5em;
       padding-bottom: 0.3em;
     }
@@ -355,8 +449,9 @@ nav {
   left: 0px;
   background-color: $color-blue-primary;
   background-color: #2499f3;
-  background-image: linear-gradient(19deg, #2499f3 0%, #B721FF 140%);
-  padding: 2em 2em 0em 2em;
+  background-image: $gradient;
+  padding: 2em 2em 2em 2em;
+  z-index: 2;
 
   .contact_cont {
     background-color: #fff;
