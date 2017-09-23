@@ -70,7 +70,9 @@ function serve() {
   PLUGINS.server.init({
     port: PORT,
     server: './',
-    open: false
+    open: false,
+    ghostMode: false
+
   });
 }
 
