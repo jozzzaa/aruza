@@ -27,3 +27,9 @@ Content written locally
 
 99 a weeks for management
 Then they pay 899 to fill a library with content around a month to 2 months
+
+
+add linked link
+website comes with social media cleanup logo and cover photo
+circle around each icon
+maybe round the corners of the contact us box
