@@ -58,7 +58,7 @@ nav {
         border-bottom: 0px;
         background-color: #fff;
         border: 1px solid rgba(#fff, 0);
-        color: darken(#1EDDB4, 10);
+        color: darken(#8649FB, 10);
       }
     }
   }
@@ -120,13 +120,8 @@ nav {
     position: relative;
     background-color: $color-blue-primary;
     background-color: #2499f3;
-    // background-image: linear-gradient(19deg, #2499f3 0%, #B721FF 140%);
-    // background-color: #FFE53B;
-    // background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
-    // background-color: #74EBD5;
-    // background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
-    background-color: #08AEEA;
     background-image: $gradient;
+
 
 
     #particles-js {
@@ -249,7 +244,7 @@ nav {
     &::before {
       height: 60%;
       width: 5px;
-      border-left: 2px solid rgba($color-green-primary, 0.8);
+      border-left: 2px solid rgba($color-purple-primary, 0.8);
       display: block;
       content: '';
       position: absolute;
@@ -264,7 +259,7 @@ nav {
     &::before {
       height: 60%;
       width: 5px;
-      border-left: 2px solid rgba($color-green-primary, 0.8);
+      border-left: 2px solid rgba($color-purple-primary, 0.8);
       display: block;
       content: '';
       position: absolute;

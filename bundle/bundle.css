@@ -475,7 +475,7 @@ ul {
 
 html {
   width: 100%;
-  background: linear-gradient(20deg, #08AEEA 0%, #2AF598 120%); }
+  background: linear-gradient(19deg, #2499f3 0%, #B721FF 140%); }
 
 body {
   height: 100%;
@@ -550,7 +550,7 @@ nav {
         border-bottom: 0px;
         background-color: #fff;
         border: 1px solid rgba(255, 255, 255, 0);
-        color: #18b08f; }
+        color: #6517fa; }
   nav .logo {
     display: inline-block;
     width: 30%; }
@@ -593,8 +593,7 @@ nav {
     position: relative;
     background-color: #2499F3;
     background-color: #2499f3;
-    background-color: #08AEEA;
-    background-image: linear-gradient(20deg, #08AEEA 0%, #2AF598 120%); }
+    background-image: linear-gradient(19deg, #2499f3 0%, #B721FF 140%); }
     .hero_container .hero #particles-js {
       position: absolute;
       top: 0px;
@@ -700,7 +699,7 @@ nav {
     .container #blue_left::before {
       height: 60%;
       width: 5px;
-      border-left: 2px solid rgba(30, 221, 180, 0.8);
+      border-left: 2px solid rgba(134, 73, 251, 0.8);
       display: block;
       content: '';
       position: absolute;
@@ -711,7 +710,7 @@ nav {
     .container #blue_right::before {
       height: 60%;
       width: 5px;
-      border-left: 2px solid rgba(30, 221, 180, 0.8);
+      border-left: 2px solid rgba(134, 73, 251, 0.8);
       display: block;
       content: '';
       position: absolute;
@@ -980,7 +979,7 @@ nav {
   position: relative;
   background-color: #2499F3;
   background-color: #2499f3;
-  background-image: linear-gradient(20deg, #08AEEA 0%, #2AF598 120%);
+  background-image: linear-gradient(19deg, #2499f3 0%, #B721FF 140%);
   padding: 1.5em 1.5em 1.5em 1.5em;
   z-index: 2;
   margin: 0 auto; }

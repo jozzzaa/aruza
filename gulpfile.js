@@ -3,8 +3,8 @@ var gulp = require('gulp');
 var path = require('path');
 var runSeq = require('run-sequence');
 
-// const PORT = 3000;
-const PORT = process.env.PORT
+const PORT = 3000;
+// const PORT = process.env.PORT
 const PLUGINS = {};
 
 PLUGINS.util = require('gulp-util');
