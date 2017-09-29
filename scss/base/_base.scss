@@ -43,3 +43,41 @@ body {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+
+.header_container {
+  height: auto;
+  width: 100%;
+  padding: 1.5%;
+  position: relative;
+
+  @include for-tablet-portrait-up {
+    height: auto;
+  }
+
+  .page_header {
+    height: auto;
+    min-height: 250px;
+    position: relative;
+    background-color: $color-blue-primary;
+    background-color: #2499f3;
+    background-image: $gradient;
+    text-align: center;
+
+    #particles-js-min {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 250px;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .header_content {
+      margin: 0 auto;
+      display: inline-block;
+      padding-top: 2em;
+    }
+
+  }
+}

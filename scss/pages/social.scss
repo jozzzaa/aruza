@@ -1,0 +1,217 @@
+#not-included {
+  opacity: 0.2;
+}
+
+// Package Gradient Colors
+$gradient-one: #E25A77;
+$gradient-two: #E25ABC;
+$gradient-three: #7E5AE2;
+$gradient-four: #5a5ce2;
+$gradient-five: #5ae2da;
+
+
+.packages {
+  width: 100%;
+  background-color: $color-background-offset;
+
+
+  .pricing_table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    cursor: default;
+    flex-wrap: wrap;
+
+    .pricing_column {
+      width: 31%;
+      background-color: #262C37;
+      margin: 0.5em;
+      padding: 1.5em 1.5em 1.5em 3.5em;
+    }
+
+    .pricing_header {
+
+      p {
+        display: inline-block;
+        opacity: 0.3;
+        vertical-align: bottom;
+        padding-bottom: 0.2em;
+      }
+
+      #dollar_sign {
+        vertical-align: top;
+      }
+
+      h1 {
+        display: inline-block;
+        padding: 0em 0.1em;
+      }
+
+      #pack_t1 {
+        color: $gradient-one;
+      }
+
+      #pack_t2 {
+        color: $gradient-two;
+      }
+
+      #pack_t3 {
+        color: $gradient-three;
+      }
+
+      #pack_t4 {
+        color: $gradient-four;
+      }
+
+      #pack_t5 {
+        color: $gradient-five;
+      }
+    }
+
+    .pricing_content {
+      padding: 2em 0em 2em 0em;
+    }
+
+    li {
+      padding: 0.4em 0em;
+      color: #d9d9d9;
+      font-family: $font-secondary;
+      font-size: 0.9em;
+      font-weight: 300;
+    }
+
+    .p_btn_holder {
+      text-align: right;
+      width: 100%;
+
+      .p_btn {
+        height: 3.5em;
+        width: 3.5em;
+        border-radius: 100%;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          opacity: 0.7;
+        }
+
+        p {
+          line-height: 2.8em;
+          font-size: 1.3em;
+        }
+      }
+
+      #btn_starter {
+        background-color: $gradient-one;
+      }
+
+      #btn_standard {
+        background-color: $gradient-two;
+      }
+
+      #btn_super {
+        background-color: $gradient-three;
+      }
+
+      #btn_accelerated {
+        background-color: $gradient-four;
+        margin-top: 15px;
+      }
+
+      #btn_custom {
+        background-color: $gradient-five;
+        margin-top: 15px;
+
+      }
+    }
+
+    .pricing_50 {
+      width: 47.2%;
+      background-color: #262C37;
+      display: flex;
+      position: relative;
+    }
+
+    .ph_aside {
+      width: 40%
+    }
+
+    .pc_aside {
+      width: 60%;
+      padding: 1em 1em 1em 1.5em;
+
+    }
+  }
+
+  .favourite_package {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 0 0;
+    border-color: $gradient-four transparent transparent transparent;
+
+    &::before {
+      content: '\2605';
+      color: #fff;
+      position: absolute;
+      margin-top: -43px;
+      margin-left: 5px;
+    }
+  }
+
+  .pricing_custom {
+    border: 1px solid red;
+    width: 100%;
+    height: 150px;
+  }
+}
+
+
+.social_message {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5em 0em;
+  position: relative;
+
+  p {
+    font-family: $font-secondary;
+    padding: 1em 0em;
+    text-align: justify;
+    line-height: 1.7em;
+  }
+
+  #signature {
+    padding: 0em;
+  }
+
+  &::after {
+    height: 70%;
+    width: 30%;
+    border-left: 1px solid rgba(#fff, 0.2);
+    border-top: 1px solid rgba(#fff, 0.2);
+    display: block;
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -70px;
+  }
+
+  &::before {
+    height: 60%;
+    width: 20%;
+    border-right: 1px solid rgba(#fff, 0.2);
+    border-bottom: 1px solid rgba(#fff, 0.2);
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    right: -50px;
+  }
+}

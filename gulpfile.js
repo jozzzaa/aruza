@@ -3,8 +3,8 @@ var gulp = require('gulp');
 var path = require('path');
 var runSeq = require('run-sequence');
 
-const PORT = 3000;
-// const PORT = process.env.PORT
+// const PORT = 3000;
+const PORT = process.env.PORT
 const PLUGINS = {};
 
 PLUGINS.util = require('gulp-util');
@@ -69,10 +69,12 @@ function webpack() {
 function serve() {
   PLUGINS.server.init({
     port: PORT,
-    server: './',
+    server: {
+      './':'index.html',
+      './social-media-management':'social.html'
+    },
     open: false,
     ghostMode: false
-
   });
 }
 

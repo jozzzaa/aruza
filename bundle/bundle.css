@@ -503,6 +503,34 @@ body {
   100% {
     opacity: 1; } }
 
+.header_container {
+  height: auto;
+  width: 100%;
+  padding: 1.5%;
+  position: relative; }
+  @media (min-width: 600px) {
+    .header_container {
+      height: auto; } }
+  .header_container .page_header {
+    height: auto;
+    min-height: 250px;
+    position: relative;
+    background-color: #2499F3;
+    background-color: #2499f3;
+    background-image: linear-gradient(19deg, #2499f3 0%, #B721FF 140%);
+    text-align: center; }
+    .header_container .page_header #particles-js-min {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 250px;
+      width: 100%;
+      z-index: 1; }
+    .header_container .page_header .header_content {
+      margin: 0 auto;
+      display: inline-block;
+      padding-top: 2em; }
+
 nav {
   width: 100%;
   margin: 0 auto;
@@ -588,6 +616,19 @@ nav {
   @media (min-width: 600px) {
     .hero_container {
       height: 100vh; } }
+  .hero_container .page_header {
+    height: 250px;
+    position: relative;
+    background-color: #2499F3;
+    background-color: #2499f3;
+    background-image: linear-gradient(19deg, #2499f3 0%, #B721FF 140%); }
+    .hero_container .page_header #particles-js-min {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 250px;
+      width: 100%;
+      z-index: 1; }
   .hero_container .hero {
     height: 100%;
     position: relative;
@@ -1014,3 +1055,146 @@ nav {
         color: #fff; }
   .contact_box p {
     color: #2B2D34; }
+
+#not-included {
+  opacity: 0.2; }
+
+.packages {
+  width: 100%;
+  background-color: #30333b; }
+  .packages .pricing_table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: default;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .packages .pricing_table .pricing_column {
+      width: 31%;
+      background-color: #262C37;
+      margin: 0.5em;
+      padding: 1.5em 1.5em 1.5em 3.5em; }
+    .packages .pricing_table .pricing_header p {
+      display: inline-block;
+      opacity: 0.3;
+      vertical-align: bottom;
+      padding-bottom: 0.2em; }
+    .packages .pricing_table .pricing_header #dollar_sign {
+      vertical-align: top; }
+    .packages .pricing_table .pricing_header h1 {
+      display: inline-block;
+      padding: 0em 0.1em; }
+    .packages .pricing_table .pricing_header #pack_t1 {
+      color: #E25A77; }
+    .packages .pricing_table .pricing_header #pack_t2 {
+      color: #E25ABC; }
+    .packages .pricing_table .pricing_header #pack_t3 {
+      color: #7E5AE2; }
+    .packages .pricing_table .pricing_header #pack_t4 {
+      color: #5a5ce2; }
+    .packages .pricing_table .pricing_header #pack_t5 {
+      color: #5ae2da; }
+    .packages .pricing_table .pricing_content {
+      padding: 2em 0em 2em 0em; }
+    .packages .pricing_table li {
+      padding: 0.4em 0em;
+      color: #d9d9d9;
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.9em;
+      font-weight: 300; }
+    .packages .pricing_table .p_btn_holder {
+      text-align: right;
+      width: 100%; }
+      .packages .pricing_table .p_btn_holder .p_btn {
+        height: 3.5em;
+        width: 3.5em;
+        border-radius: 100%;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        transition: 0.3s; }
+        .packages .pricing_table .p_btn_holder .p_btn:hover {
+          opacity: 0.7; }
+        .packages .pricing_table .p_btn_holder .p_btn p {
+          line-height: 2.8em;
+          font-size: 1.3em; }
+      .packages .pricing_table .p_btn_holder #btn_starter {
+        background-color: #E25A77; }
+      .packages .pricing_table .p_btn_holder #btn_standard {
+        background-color: #E25ABC; }
+      .packages .pricing_table .p_btn_holder #btn_super {
+        background-color: #7E5AE2; }
+      .packages .pricing_table .p_btn_holder #btn_accelerated {
+        background-color: #5a5ce2;
+        margin-top: 15px; }
+      .packages .pricing_table .p_btn_holder #btn_custom {
+        background-color: #5ae2da;
+        margin-top: 15px; }
+    .packages .pricing_table .pricing_50 {
+      width: 47.2%;
+      background-color: #262C37;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: relative; }
+    .packages .pricing_table .ph_aside {
+      width: 40%; }
+    .packages .pricing_table .pc_aside {
+      width: 60%;
+      padding: 1em 1em 1em 1.5em; }
+  .packages .favourite_package {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 50px 50px 0 0;
+    border-color: #5a5ce2 transparent transparent transparent; }
+    .packages .favourite_package::before {
+      content: '\2605';
+      color: #fff;
+      position: absolute;
+      margin-top: -43px;
+      margin-left: 5px; }
+  .packages .pricing_custom {
+    border: 1px solid red;
+    width: 100%;
+    height: 150px; }
+
+.social_message {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5em 0em;
+  position: relative; }
+  .social_message p {
+    font-family: "Open Sans", sans-serif;
+    padding: 1em 0em;
+    text-align: justify;
+    line-height: 1.7em; }
+  .social_message #signature {
+    padding: 0em; }
+  .social_message::after {
+    height: 70%;
+    width: 30%;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: block;
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -70px; }
+  .social_message::before {
+    height: 60%;
+    width: 20%;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    right: -50px; }
