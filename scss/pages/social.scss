@@ -215,3 +215,99 @@ $gradient-five: #5ae2da;
     right: -50px;
   }
 }
+
+.social_images {
+  height: auto;
+  width: 100%;
+  display: block;
+
+  @include for-desktop-up {
+    height: 550px;
+  }
+
+  @include for-tablet-portrait-up {
+    display: flex;
+  }
+
+  .image_holder {
+    background: url('../../../images/social_images.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 60%;
+  }
+
+  .social_image_content {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+
+    .images_text {
+      display: block;
+      width: 80%;
+      padding: 3.5em;
+      // margin-left: -20%;
+      background-color: $color-background;
+    }
+  }
+}
+
+
+.grow_following {
+  width: 100%;
+  height: auto;
+  // display: block;
+  background-color: $color-background-offset;
+  display: flex;
+
+  @include for-desktop-up {
+    height: 550px;
+  }
+
+  .left_content {
+    width: 40%;
+    position: relative;
+    display: inline-block;
+    // border: 1px solid red;
+
+    .grow_text {
+      display: inline-block;
+
+      @include for-desktop-up {
+        position: absolute;
+        right: -33.3333%;
+        top: 25%;
+        width: 80%;
+
+      }
+
+      img {
+        height: 50px;
+      }
+    }
+  }
+
+  .right_graph {
+    width: 60%;
+    position: relative;
+    // border: 1px solid red;
+    display: block;
+    padding: 2em;
+
+    img {
+      display: block;
+      position: relative;
+      width: 100%;
+      position: relative;
+
+      @include for-desktop-up {
+        width: 80%;
+        position: absolute;
+        bottom: 3em;
+        left: 0px;
+      }
+    }
+  }
+}

@@ -1198,3 +1198,74 @@ nav {
     position: absolute;
     bottom: 40px;
     right: -50px; }
+
+.social_images {
+  height: auto;
+  width: 100%;
+  display: block; }
+  @media (min-width: 1200px) {
+    .social_images {
+      height: 550px; } }
+  @media (min-width: 600px) {
+    .social_images {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  .social_images .image_holder {
+    background: url("../../../images/social_images.jpg") no-repeat center center;
+    background-size: cover;
+    width: 60%; }
+  .social_images .social_image_content {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .social_images .social_image_content .images_text {
+      display: block;
+      width: 80%;
+      padding: 3.5em;
+      background-color: #2B2D34; }
+
+.grow_following {
+  width: 100%;
+  height: auto;
+  background-color: #30333b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (min-width: 1200px) {
+    .grow_following {
+      height: 550px; } }
+  .grow_following .left_content {
+    width: 40%;
+    position: relative;
+    display: inline-block; }
+    .grow_following .left_content .grow_text {
+      display: inline-block; }
+      @media (min-width: 1200px) {
+        .grow_following .left_content .grow_text {
+          position: absolute;
+          right: -33.3333%;
+          top: 25%;
+          width: 80%; } }
+      .grow_following .left_content .grow_text img {
+        height: 50px; }
+  .grow_following .right_graph {
+    width: 60%;
+    position: relative;
+    display: block;
+    padding: 2em; }
+    .grow_following .right_graph img {
+      display: block;
+      position: relative;
+      width: 100%;
+      position: relative; }
+      @media (min-width: 1200px) {
+        .grow_following .right_graph img {
+          width: 80%;
+          position: absolute;
+          bottom: 3em;
+          left: 0px; } }
